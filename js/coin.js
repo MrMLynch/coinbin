@@ -19,7 +19,7 @@
 	coinjs.compressed = false;
 
 	/* other vars */
-	coinjs.developer = 'RTCVGuoSNehKG8YYxcoskC7LK1yZhgvQRV'; //komodo
+	coinjs.developer = 'RSDiKonpWwbe1oy8yD5mYFqvSZCwYQHmsD'; //komodo
 
 	/* bit(coinb.in) api vars */
 	coinjs.host = ('https:'==document.location.protocol?'https://':'http://')+'coinb.in/api/';
@@ -318,7 +318,7 @@
 	coinjs.addressBalance = function(address, callback){
 		// coinjs.ajax(coinjs.host+'?uid='+coinjs.uid+'&key='+coinjs.key+'&setmodule=addresses&request=bal&address='+address+'&r='+Math.random(), callback, "GET");
 		// console.log(callback);
-                coinjs.ajax('https://kmdexplorer.io/insight-api-komodo/addr/'+address+'/balance', callback, "GET");
+                coinjs.ajax('https://thc.explorer.dexstats.info/insight-api-komodo/addr/'+address+'/balance', callback, "GET");
 
 	}
 
@@ -1052,7 +1052,7 @@
 		/* list unspent transactions */
 		r.listUnspent = function(address, callback) {
 			// coinjs.ajax(coinjs.host+'?uid='+coinjs.uid+'&key='+coinjs.key+'&setmodule=addresses&request=unspent&address='+address+'&r='+Math.random(), callback, "GET");
-			coinjs.ajax("https://kmdexplorer.io/insight-api-komodo/" + "addr/" + address + "/utxo", callback, "GET");
+			coinjs.ajax("https://thc.explorer.dexstats.info/insight-api-komodo/" + "addr/" + address + "/utxo", callback, "GET");
 		}
 
 		/* add unspent to transaction */
@@ -1096,7 +1096,7 @@
 			var tx = txhex || this.serialize();
 			// coinjs.ajax(coinjs.host+'?uid='+coinjs.uid+'&key='+coinjs.key+'&setmodule=bitcoin&request=sendrawtransaction&rawtx='+tx+'&r='+Math.random(), callback, "GET");
 			console.log(tx);
-                        coinjs.ajax('https://kmdexplorer.io/insight-api-komodo/tx/send', callback, "POST", "rawtx="+tx);
+                        coinjs.ajax('https://thc.explorer.dexstats.info/insight-api-komodo/tx/send', callback, "POST", "rawtx="+tx);
 		}
 
 		/* generate the transaction hash to sign from a transaction input */

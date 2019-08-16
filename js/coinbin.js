@@ -2,9 +2,9 @@ $(document).ready(function() {
 
 	/* open wallet code */
 
-	var explorer_tx = "https://kmdexplorer.io/tx/"
-	var explorer_addr = "https://kmdexplorer.io/address/"
-	var explorer_block = "https://kmdexplorer.io/block/"
+	var explorer_tx = "https://thc.explorer.dexstats.info/tx/"
+	var explorer_addr = "https://thc.explorer.dexstats.info/address/"
+	var explorer_block = "https://thc.explorer.dexstats.info/block/"
 
 	var wallet_timer = false;
 
@@ -201,7 +201,7 @@ $(document).ready(function() {
 
 					if (status == 200) {
 					   var obj = $.parseJSON(data);
-                                           $("#walletSendConfirmStatus").removeClass('hidden').addClass('alert-success').html('txid: <a href="https://kmdexplorer.io/tx/'+ obj.txid +'" target="_blank">'+ obj.txid +'</a>');
+                                           $("#walletSendConfirmStatus").removeClass('hidden').addClass('alert-success').html('txid: <a href="https://thc.explorer.dexstats.info/tx/'+ obj.txid +'" target="_blank">'+ obj.txid +'</a>');
 					} else {
 						$("#walletSendConfirmStatus").removeClass('hidden').addClass('alert-danger').html(unescape(data).replace(/\+/g,' '));
 						$("#walletSendFailTransaction").removeClass('hidden');
@@ -902,7 +902,7 @@ $(document).ready(function() {
 			listUnspentChainso_Dogecoin(redeem);
 		} else if(host=='cryptoid.info_carboncoin'){
 			listUnspentCryptoidinfo_Carboncoin(redeem);
-		} else if(host=='kmdexplorer.io_komodo'){
+		} else if(host=='thc.explorer.dexstats.info_komodo'){
 			listUnspentKMDexplorerio_Komodo(redeem);
 		} else {
 			listUnspentKMDexplorerio_Komodo(redeem); // [+] Decker: default is KMD, where host == 'undefined'
@@ -1109,12 +1109,12 @@ $(document).ready(function() {
 
 	}
 
-	/* retrieve unspent data from kmdexplorer.io for Komodo */
+	/* retrieve unspent data from thc.explorer.dexstats.info for THC */
 	function listUnspentKMDexplorerio_Komodo(redeem) {
 
 		$.ajax ({
 			type: "GET",
-			url: "https://kmdexplorer.io/insight-api-komodo/" + "addr/" + redeem.addr + "/utxo",
+			url: "https://thc.explorer.dexstats.info/insight-api-komodo/" + "addr/" + redeem.addr + "/utxo",
 			error: function() {                                                            
 				$("#redeemFromStatus").removeClass('hidden').html('<span class="glyphicon glyphicon-exclamation-sign"></span> Unexpected error, unable to retrieve unspent outputs!');
 			},
@@ -1686,7 +1686,7 @@ $(document).ready(function() {
 
 					// https://stackoverflow.com/questions/38738614/when-all-ajax-requests-complete
 
-					var root = 'https://kmdexplorer.io/insight-api-komodo/tx/';
+					var root = 'https://thc.explorer.dexstats.info/insight-api-komodo/tx/';
 					var p = [];
 					  
 					for (var i=0; i<unique_txes.length; i++) {
@@ -1733,7 +1733,7 @@ $(document).ready(function() {
 					*/
 
 					/*
-						coinjs.ajax('https://kmdexplorer.io/insight-api-komodo/tx/'+unique_txes[i], function(d,s) {
+						coinjs.ajax('https://thc.explorer.dexstats.info/insight-api-komodo/tx/'+unique_txes[i], function(d,s) {
 							if (s == 200) {
 								var data = $.parseJSON(d);
 								var vout = data.vout;
