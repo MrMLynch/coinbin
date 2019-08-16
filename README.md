@@ -32,4 +32,4 @@ Coinb.in supports a number of key features such as:
 - Bech32 address support
 - Fee calculator - https://coinb.in/#fees
 
-Donate to 3K1oFZMks41C7qDYBsr72SYjapLqDuSYuN to see more development!
+Donate to 1HwXFHuXv7o4wobwW36eSjWigHkLrKtGxM to see more development!
