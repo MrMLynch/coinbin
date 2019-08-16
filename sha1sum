@@ -10,10 +10,10 @@ de51a8494180a6db074af2dee2383f0a363c5b08  ./fonts/glyphicons-halflings-regular.s
 f2af060f1cadbc9065c8c465c648dc01be67cc12  ./images/loader.gif
 2e3217a3f3b7c2fb30562ab9a4ef9a407ae81897  ./images/btc32x.png
 8ac24915d59cef71c542e7cb7d7e153f560cba1f  ./images/coinbin.gif
-470adfb1a027a0f86bb7efca6fa1a3ebbd6630a8  ./images/komodo-logo.png
+084dd5c26450e5710cc4be2d555a92aca409f5fe  ./images/thc-logo.png
 9ba5ede3d7f9d4c8fd623395f196adfdcf7e970f  ./js/crypto-min.js
 114089ef2a3feb6d4db4f9cabcb186d7750d5884  ./js/sha512.js
-19de53ac30b8abbefcda9cc6d2adbdddc1cb2c69  ./js/coinbin.js
+02d617d3c2c6dff0f55757ae38969a6466b5a1f5  ./js/coinbin.js
 be17ca7c834204bff711f582e41f76c06d472bac  ./js/jsbn.js
 506c40035e0d22560478629434d0fea27643b77a  ./js/transition.js
 253711c6d825de55a8360552573be950da180614  ./js/bootstrap.min.js
@@ -25,10 +25,10 @@ e6810907c901e6bd34a28735a68850936f0823b8  ./js/ellipticcurve.js
 ae49e56999d82802727455f0ba83b63acd90a22b  ./js/jquery-1.9.1.min.js
 3a09a8fc0cfe828b57fc798d668234d0490ee1a6  ./js/bootstrap-datetimepicker.min.js
 f7c09f2f5a721371e7d478050119f7e2d58e3ef9  ./js/crypto-sha256-hmac.js
-7c74c20471872845e9897a39a6f4968b3ea6350e  ./js/coin.js
+0f3391120f01282db13fc924b3264ad54c8656ee  ./js/coin.js
 ad038e1f39646b68ae666324ed4c2882a8c42474  ./js/qrcode.js
 77e4519962e2f6a9fc93342137dbb31c33b76b04  ./js/aes.js
 0700fc9ad2e39adeca0b50614bb3d327fb49f609  ./js/crypto-sha256.js
 c024021c71cba503979a859d23cbf7a88b570d82  ./README.md
 5f570018ed044eafd464f7e0ab1783b966224055  ./LICENSE
-b3b64afb269adf2a09fd74f97988b9690af5d859  ./index.html
+8b2b7878103840098dcfcb1ad933f4eb6e3d0f3f  ./index.html
